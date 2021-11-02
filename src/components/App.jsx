@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css'
 import TitleBar from './TitleBar/TitleBar';
+import BookViewer from './BookViewer/BookViewer';
 
 class App extends Component{
     constructor(props){
@@ -44,21 +45,8 @@ class App extends Component{
             
             <div className="container-fuild">
                 <TitleBar />
-                <div className="row">
-                    <div className="col-md-4">
-                        {/* Button here for move to previous book */}
-                        <button onClick={this.goToPreviousBook}>Previous Book</button>
-                    </div>
-                    <div className="col-md-4">
-                        <h1>{this.books[this.state.bookNumber].title}</h1>
-                        <h3>{this.books[this.state.bookNumber].author}</h3>
-                        
-                    </div>
-                    <div className="col-md-4">
-                        {/* Button here for move to next book */}
-                        <button onClick={this.goToNextBook}>Next Book</button>
-                    </div>
-                </div>
+                <BookViewer book = {this.books[this.state.bookNumber]} nextBook={this.goToNextBook} previousBook={this.goToPreviousBook}/>
+                
             </div>
         )
     }
