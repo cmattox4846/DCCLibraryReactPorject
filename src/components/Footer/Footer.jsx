@@ -5,13 +5,13 @@ import "./Footer.css"
 
 const footer = () => {
     return ( 
-        <div className="row row-space">
+        <footer className='footer'>
+        
 
-            <div className='footer'>
-                <h5> Chris'Library | Privacy Policy | Terms</h5>
-            </div>
-        </div>
-
+            
+                <h5> Copyright © 2021 <br/> Chris'Library | Privacy Policy | Terms</h5>
+            
+        </footer>
      );
 }
  

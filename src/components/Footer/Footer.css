@@ -1,6 +1,9 @@
 .footer{
- background-color: lightgray;   
+ background-color: lightblue;   
  text-align: center;
+ width: 100%;
+ box-shadow: 0 50vh 0 50vh lightblue;
+ margin-top: 2em;
 }
 
 
